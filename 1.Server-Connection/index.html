@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.io Demo</title>
+  </head>
+  <body>
+    <h1>Socket.io Demonstration</h1>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io()
+      console.log(socket)
+      socket.on("connect", () => {
+        console.log("Connected to (client)")
+      })
+    </script>
+  </body>
+</html>
